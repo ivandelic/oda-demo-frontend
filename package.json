@@ -1,0 +1,12 @@
+{
+    "name": "oda-covid-frontend",
+    "version": "1.0.0",
+    "description": "Demo forntend for Oracle Digital Assistant against COVID-19",
+    "dependencies": {
+        "http-server": "0.12.1"
+    },
+    "scripts": {
+        "start": "http-server -p 3000"
+    },
+    "author": "ivan.delic"
+}
