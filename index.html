@@ -11,36 +11,18 @@
     <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/redwood-base.css" rel="preload" as="style" onload="this.rel='stylesheet'"
         onerror="this.rel='stylesheet'">
-
-    <script>
-        /**
-         * Flag to set mechanism to connect to chat server
-         * true - Use authentication token based mechanism
-         * false - Use parameters to connect to chat server
-         */
-        var clientAuthEnabled = false;
-    </script>
-    <script src="scripts/settings.js"></script>
     <script>
         var chatWidgetSettings = {
             URI: 'oda-d11e0d7297d34f79a661a74649ecbcab-da4.data.digitalassistant.oci.oraclecloud.com',
             channelId: '84fda4e7-7f12-42b6-8f3f-1543b6618d11'
         };
-
         function initSdk(name) {
-            // Default name is Bots
             if (!name) {
                 name = 'Bots';
             }
             setTimeout(() => {
-                let Bots;
-                if (clientAuthEnabled) {
-                    Bots = new WebSDK(chatWidgetSettings, generateToken);
-                } else {
-                    Bots = new WebSDK(chatWidgetSettings);
-                }
+                let Bots = new WebSDK(chatWidgetSettings);
                 Bots.connect();
-
                 window[name] = Bots;
             });
         }
