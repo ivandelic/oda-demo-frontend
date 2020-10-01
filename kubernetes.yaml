@@ -1,13 +1,13 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: oda-covid19-frontend-service
+  name: oda-demo-frontend-service
   labels:
-    app: oda-covid19-frontend
+    app: oda-demo-frontend
 spec:
   type: LoadBalancer
   selector:
-    app: oda-covid19-frontend
+    app: oda-demo-frontend
   ports:
   - port: 80
     targetPort: 3000
@@ -16,23 +16,23 @@ spec:
 kind: Deployment
 apiVersion: apps/v1
 metadata:
-  name: oda-covid19-frontend-deployment
+  name: oda-demo-frontend-deployment
   labels:
-    app: oda-covid19-frontend
+    app: oda-demo-frontend
 spec:
   selector:
     matchLabels:
-      app: oda-covid19-frontend
+      app: oda-demo-frontend
   replicas: 1
   template:
     metadata:
       labels:
-        app: oda-covid19-frontend
+        app: oda-demo-frontend
         version: v1
     spec:
       containers:
-      - name: oda-covid19-frontend
-        image: 'eu-frankfurt-1.ocir.io/oraseemeaceeociworkshop/ivandelic/covid19/oda-covid19-frontend:latest'
+      - name: oda-demo-frontend
+        image: 'eu-frankfurt-1.ocir.io/oraseemeaceeociworkshop/ivandelic/general/oda-demo-frontend:latest'
         imagePullPolicy: Always
         ports:
         - containerPort: 3000

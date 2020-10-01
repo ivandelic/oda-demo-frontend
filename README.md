@@ -1,1 +1,1 @@
-## ODA frontend channel for COVID-19 skill
+## ODA frontend channel for demonstrating Digital Assitant capabilities
