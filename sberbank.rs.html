@@ -1,0 +1,1504 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta name="keywords" content="" />
+    <meta name="robots" content="all" />
+    <meta http-equiv="generator" content="OCP, Omnicom`s Content Plaform" />
+    <meta http-equiv="author" content="Omnicom Solutions doo, http://www.omnicom.rs" />
+    <title>Početna | Sberbank</title>
+
+    <!-- Meta -->
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no;" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Smart Banner -->
+    <!--<meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-itunes-app" content="app-id=770920322">-->
+
+    <!--<meta name="smartbanner:hide-ttl" content="2629746000">-->
+    <!--<meta name="smartbanner:hide-path" content="/">-->
+    <!--<meta name="smartbanner:disable-positioning" content="true">-->
+    <!-- Enable for all platforms -->
+    <!--<meta name="smartbanner:include-user-agent-regex" content=".*">-->
+    <!--<meta name="smartbanner:custom-design-modifier" content="ios">-->
+    <link rel="stylesheet" type="text/css" media="screen, projection" href="http://www.sberbank.rs/css/smartbanner.css">
+    <script type="text/javascript" src="http://www.sberbank.rs/jscript/smartbanner.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" media="screen, projection" href="http://www.sberbank.rs/css/default.css" />
+    <!--<link rel="stylesheet" type="text/css" href="/css/slick.css" />-->
+
+    <link rel="stylesheet" type="text/css" media="only screen and (max-width: 1060px)" href="http://www.sberbank.rs/css/screens.css" />
+    <link rel="stylesheet" type="text/css" media="print" href="http://www.sberbank.rs/css/print.css" />
+    <link rel="stylesheet" href="http://www.sberbank.rs/css/jquery.qtip.min.css" />
+
+    <!-- Java Script -->
+    <script src="http://www.sberbank.rs/jscript/jquery-1.12.2.min.js"></script>
+    <script src="http://www.sberbank.rs/jscript/jquery.magnific-popup.min.js"></script>
+    <script src="http://www.sberbank.rs/jscript/slick.min.js"></script>
+    <script src="http://www.sberbank.rs/jscript/modernizr-custom.js"></script>
+    <script src="http://www.sberbank.rs/jscript/jquery.sticky.js"></script>
+    <script src="http://www.sberbank.rs/jscript/iscroll.js"></script>
+    <script src="http://www.sberbank.rs/jscript/bootstrap-slider.js"></script>
+    <script src="http://www.sberbank.rs/jscript/select2.min.js"></script>
+    <script src="http://www.sberbank.rs/jscript/jquery.accordion.js"></script>
+    <script src="http://www.sberbank.rs/jscript/bootstrap.min.js"></script>
+    <script src="http://www.sberbank.rs/jscript/bootstrap-datepicker.min.js"></script>
+    <script src="http://www.sberbank.rs/jscript/bootstrap-datepicker.rs-latin.min.js"></script>
+    <script src="http://www.sberbank.rs/jscript/jquery.MultiFile.js"></script>
+    <script src="http://www.sberbank.rs/jscript/jquery.form.js"></script>
+    <script src="http://www.sberbank.rs/jscript/jquery.validate.js"></script>
+    <script src="http://www.sberbank.rs/jscript/messages_sr_lat.js"></script>
+    <script src="http://www.sberbank.rs/jscript/custom.js"></script>
+    <script type="text/javascript" src="http://www.sberbank.rs/jscript/highstock.js"></script>
+    <script type="text/javascript" src="http://www.sberbank.rs/jscript/exporting.js"></script>
+    <script type="text/javascript" src="http://www.sberbank.rs/jscript/jquery.qtip.min.js"></script>
+    <script type="text/javascript" src="http://www.sberbank.rs/jscript/moment.min.js"></script>
+    <script type="text/javascript" src="http://www.sberbank.rs/jscript/combodate.js"></script>
+    <script type="text/javascript" src="http://www.sberbank.rs/aspx/form/js/form.js"></script>
+
+    <script>
+        /**
+        * Flag to set mechanism to connect to chat server
+        * true - Use authentication token based mechanism
+        * false - Use parameters to connect to chat server
+        */
+        var clientAuthEnabled = false;
+    </script>
+    <script src="scripts/settings.js"></script>
+    <script>
+        var chatWidgetSettings = {
+            URI: 'oda-d11e0d7297d34f79a661a74649ecbcab-da4.data.digitalassistant.oci.oraclecloud.com',
+            channelId: '1a1b01b9-7606-4d69-84df-2e5c1c159f2b',
+            colors: {
+                branding: "#369A1E"
+            },
+            botButtonIcon: "images/sberBot.svg"
+        };
+  
+        function initSdk(name) {
+            // Default name is Bots
+            if (!name) {
+                name = 'Bots';
+            }
+            setTimeout(() => {
+                let Bots;
+                if (clientAuthEnabled) {
+                    Bots = new WebSDK(chatWidgetSettings, generateToken);
+                } else {
+                    Bots = new WebSDK(chatWidgetSettings);
+                }
+                Bots.connect();
+  
+                window[name] = Bots;
+            });
+        }
+    </script>
+    <script src="scripts/web-sdk.js" onload="initSdk('Bots')"></script>
+</head>
+
+<body>
+
+    <div class="mobile-menu" style="display: none;">
+
+        <!-- <a class="close-menu mobile-menu-action" href="#">x</a>	 -->
+
+        <ul class="buttons">
+            <li class=' menuItem active'><a href='/stanovnistvo'>Stanovništvo</a></li>
+            <li class=' menuItem'><a href='/elite_banking/o-elite-banking-usluzi/o-elite-banking-usluzi'>Elite
+                    Banking</a></li>
+            <li class=' menuItem'><a href='/mali-biznis/mala-preduzeca'>Mali biznis</a></li>
+            <li class=' menuItem'><a href='/privreda/privreda'>Privreda</a></li>
+            <li class=' menuItem'><a href='/univerzalni_kalkulator/univerzalni-kalkulator'>Univerzalni kalkulator</a>
+            </li>
+            <li class=' menuItem'><a href='/superkarticari'>Superkartičari</a></li>
+        </ul>
+
+        <ul class="links">
+            <li class=' hasChild'><a href='#main-0'>Računi i paketi</a>
+                <ul id="main-0">
+                    <li class=' submenu'><a href='/stanovnistvo/racuni_i_paketi/jednostavno-tekuci-racun'>Jednostavno
+                            tekući račun</a></li>
+                    <li class=' submenu'><a href='/stanovnistvo/racuni_i_paketi/osnovni-paket'>Osnovni tekući račun</a>
+                    </li>
+                    <li class=' submenu'><a href='/stanovnistvo/racuni_i_paketi/24-7-usluge'>24-7- usluge</a></li>
+                    <li class=' submenu'><a href='/stanovnistvo/racuni_i_paketi/dozvoljeni-minus'>Dozvoljeno
+                            prekoračenje</a></li>
+                    <li class=' submenu'><a
+                            href='/stanovnistvo/racuni_i_paketi/platni-racun-sa-osnovnim-uslugama'>Platni račun sa
+                            osnovnim uslugama</a></li>
+                </ul>
+            </li>
+            <li class=' hasChild'><a href='#main-1'>Krediti</a>
+                <ul id="main-1">
+                    <li class=' submenu'><a href='/stanovnistvo/krediti/kes-kredit'>Keš kredit</a></li>
+                    <li class=' submenu'><a href='/stanovnistvo/krediti/krediti-za-refinansiranje'>Krediti za
+                            refinansiranje</a></li>
+                    <li class=' submenu'><a href='/stanovnistvo/krediti/bonus-krediti'>Bonus krediti</a></li>
+                    <li class=' submenu'><a href='/stanovnistvo/krediti/auto-krediti'>Auto kredit</a></li>
+                    <li class=' submenu'><a href='/stanovnistvo/krediti/super-kredit'>Keš krediti i krediti za
+                            refinansiranje</a></li>
+                </ul>
+            </li>
+            <li class=' hasChild'><a href='#main-2'>Štednja</a>
+                <ul id="main-2">
+                    <li class=' submenu'><a href='/stanovnistvo/stednja/devizna-stepenasta-stednja'>Devizna stepenasta
+                            štednja</a></li>
+                    <li class=' submenu'><a href='/stanovnistvo/stednja/dinarska-stepenasta-stednja'>Dinarska stepenasta
+                            štednja</a></li>
+                    <li class=' submenu'><a href='/stanovnistvo/stednja/orocena-stednja-1'>Oročena štednja</a></li>
+                    <li class=' submenu'><a href='/stanovnistvo/stednja/dobro-jutro-stednja-6'>Dobro jutro štednja</a>
+                    </li>
+                    <li class=' submenu'><a href='/stanovnistvo/stednja/stednja_30_50'>Štednja 30+ 50+</a></li>
+                    <li class=' submenu'><a href='/stanovnistvo/stednja/super-stednja'>Super štednja</a></li>
+                </ul>
+            </li>
+            <li class=' hasChild'><a href='#main-3'>Platne kartice</a>
+                <ul id="main-3">
+                    <li class=' submenu'><a href='/stanovnistvo/platne_kartice/mastercard-standard'>Mastercard
+                            Standard</a></li>
+                    <li class=' submenu'><a href='/stanovnistvo/platne_kartice/mastercard-debit-kartica'>Mastercard
+                            Debit</a></li>
+                    <li class=' submenu'><a href='/stanovnistvo/platne_kartice/mastercard-gold'>Mastercard Gold</a></li>
+                    <li class=' submenu'><a href='/stanovnistvo/platne_kartice/super-kartica'>Super Kartica</a></li>
+                    <li class=' submenu'><a href='/stanovnistvo/platne_kartice/korisni-saveti-1'>Korisni saveti</a></li>
+                    <li class=' submenu'><a href='/stanovnistvo/platne_kartice/sa-nama-na-putu-kartica'>Sa nama na
+                            putu</a></li>
+                    <li class=' submenu'><a href='/stanovnistvo/platne_kartice/dinacard-debit-kartica'>DinaCard
+                            Debit</a></li>
+                    <li class=' submenu'><a href='/stanovnistvo/platne_kartice/super-kartica-plus'>Super Kartica
+                            Plus</a></li>
+                    <li class=' submenu'><a href='/stanovnistvo/platne_kartice/platna-super-kartica'>Platna Super
+                            Kartica</a></li>
+                    <li class=' submenu'><a href='/stanovnistvo/platne_kartice/specijalne-ponude'>Specijalne ponude</a>
+                    </li>
+                    <li class=' submenu'><a href='/stanovnistvo/platne_kartice/knjizica-pogodnosti'>Super ponuda za
+                            Superkartičare</a></li>
+                    <li class=' submenu'><a
+                            href='/stanovnistvo/platne_kartice/uputstvo-za-placanje-mastercard-kreditnom-karticom-na-internetu'>Uputstvo
+                            za plaćanje Mastercard platnim karticama na internetu</a></li>
+                    <li class=' submenu'><a href='https://www.sberbank.rs/loungekey' target='_blank'>LoungeKey</a></li>
+                    <li class=' submenu'><a href='https://www.sberbank.rs/boingo-wifi' target='_blank'>Boingo Wi-Fi</a>
+                    </li>
+                </ul>
+            </li>
+            <li class=' hasChild'><a href='#main-4'>Ostale usluge</a>
+                <ul id="main-4">
+                    <li class=' submenu'><a href='/stanovnistvo/ostale_usluge/osiguranje-1'>Osiguranje</a></li>
+                    <li class=' submenu'><a href='/stanovnistvo/ostale_usluge/placanje-2d-bar-kodom'>Plaćanje računa
+                            skeniranjem bar koda</a></li>
+                    <li class=' submenu'><a href='/stanovnistvo/ostale_usluge/placanje-prema-inostranstvu'>Plaćanje
+                            prema inostranstvu</a></li>
+                    <li class=' submenu'><a href='/stanovnistvo/ostale_usluge/usluge-sektora-trzista-6'>Usluge sektora
+                            tržišta</a></li>
+                    <li class=' submenu'><a href='/stanovnistvo/ostale_usluge/transfer-novca-6'>MoneyGram</a></li>
+                    <li class=' submenu'><a href='/stanovnistvo/ostale_usluge/transfer-novca'>WesternUnion </a></li>
+                    <li class=' submenu'><a href='/stanovnistvo/ostale_usluge/banka-na-poslu'>Banka na poslu</a></li>
+                    <li class=' submenu'><a href='/stanovnistvo/ostale_usluge/prodaja-stanova-i-nepokretnosti'>Prodaja
+                            stanova i nepokretnosti</a></li>
+                    <li class=' submenu'><a href='/stanovnistvo/ostale_usluge/nabavke'>Nabavke</a></li>
+                    <li class=' submenu'><a href='/stanovnistvo/ostale_usluge/instant-placanja'>Instant plaćanja</a>
+                    </li>
+                </ul>
+            </li>
+            <li class=' hasChild'><a href='#main-5'>Digitalna banka</a>
+                <ul id="main-5">
+                    <li class=' submenu'><a href='/stanovnistvo/digitalna_banka/sber-x-change'>Sber X:Change</a></li>
+                    <li class=' submenu'><a href='/stanovnistvo/digitalna_banka/mobilna-aplikacija'>Sberbank Online -
+                            Smart mbanking aplikacija </a></li>
+                    <li class=' submenu'><a href='/stanovnistvo/digitalna_banka/e-banking'>Sberbank Online - Smart
+                            elektronsko bankarstvo </a></li>
+                    <li class=' submenu'><a
+                            href='/stanovnistvo/digitalna_banka/placanje-racima-skeniranjem-qr-koda'>Plaćanje računa
+                            skeniranjem QR koda</a></li>
+                    <li class=' submenu'><a href='/stanovnistvo/digitalna_banka/sberbank-bankomati'>Sberbank Smart
+                            bankomati </a></li>
+                    <li class=' submenu'><a href='/stanovnistvo/digitalna_banka/sberbank-online-uputstva'>Sberbank
+                            Online – Uputstva</a></li>
+                    <li class=' submenu'><a
+                            href='/stanovnistvo/digitalna_banka/instant-placanje-skeniranjem-qr-koda'>IPS - instant
+                            plaćanje skeniranjem QR koda</a></li>
+                    <li class=' submenu'><a href='/stanovnistvo/digitalna_banka/smart-kes-kredit'>Smart Keš Kredit</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <ul class="bottom-links">
+
+            <li><a href="/o-nama">O nama</a>
+
+
+
+            </li>
+
+            <li><a href="/karijera">Karijera</a>
+
+
+
+            </li>
+
+            <li><a href="/o-nama/press-centar">Press Centar</a>
+
+
+
+            </li>
+
+            <li><a href="/o-nama/kontakt">Kontakt</a>
+
+
+
+            </li>
+
+        </ul>
+    </div>
+    <div class="search-mobile-menu">
+        <div class="ui-widget">
+            <form id="mobile-search-form" method="GET" action="/o-nama.929.html">
+                <input name="section" value="stanovnistvo/" type="hidden">
+                <input class="form-control" placeholder="Pretraga..." name="search" value="" type="text">
+                <button type="submit" class="btn-green">Pretraga</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $(".exit-btn").click(function () {
+                $(".popup-menu-al").css("display", "none");
+                $(".container").css("opacity", "1");
+                $("body").css("backgroundColor", "#f3f3f3");
+            });
+            $(".cta-btn").click(function () {
+                $(".popup-menu-al").css("display", "none");
+                $(".container").css("opacity", "1");
+                $("body").css("backgroundColor", "#f3f3f3");
+            });
+        });
+    </script>
+
+    <div class="container">
+
+
+        <header>
+            <div class="headerBox">
+                <div class="topBar">
+                    <div class="secNavBox">
+                        <ul class="firstNav">
+                            <li class=' current'><a href='/stanovnistvo'>Stanovništvo</a>
+                            <li class=' hasElite'><a
+                                    href='/elite_banking/o-elite-banking-usluzi/o-elite-banking-usluzi'>Elite
+                                    Banking</a>
+                            <li class=' hasChild'><a href='#'>Mali biznis</a>
+                                <ul class="level-1">
+                                    <div class="row">
+                                        <li class=' hasChild col-sm-12'>
+                                            <div><a href='/mali-biznis/mala-preduzeca'>
+                                                    <h4>Mala preduzeća</h4>
+                                                </a></div>
+                                        </li>
+                                        <li class=' hasChild col-sm-12'>
+                                            <div><a href='/mali_biznis/preduzetnici'>
+                                                    <h4>Preduzetnici</h4>
+                                                </a></div>
+                                        </li>
+                                        <li class=' hasChild col-sm-12'>
+                                            <div><a href='/poljoprivreda'>
+                                                    <h4>Poljoprivreda</h4>
+                                                </a></div>
+                                        </li>
+                                    </div>
+                                </ul>
+                            </li>
+                            <li class=''><a href='/privreda/privreda'>Privreda</a>
+                            <li class=' hasChild'><a href='#'>Univerzalni kalkulator</a>
+                                <ul class="level-1">
+                                    <div class="row">
+                                        <li class=' col-sm-12'>
+                                            <div><a href='/univerzalni_kalkulator/univerzalni-kalkulator'>
+                                                    <h4>Univerzalni kalkulator</h4>
+                                                </a></div>
+                                        </li>
+                                    </div>
+                                </ul>
+                            </li>
+                            <li class=''><a href='/superkarticari'>Superkartičari</a>
+                        </ul>
+                        <ul class="lastNav">
+
+                            <li><a href="/o-nama">O nama</a>
+
+
+
+                            </li>
+
+                            <li><a href="/karijera">Karijera</a>
+
+
+
+                            </li>
+
+                            <li><a href="/o-nama/press-centar">Press Centar</a>
+
+
+
+                            </li>
+
+                            <li><a href="/o-nama/kontakt">Kontakt</a>
+
+
+
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="centralBox">
+                    <div class="row">
+                        <div class="col-sm-4 col-md-3 col-xs-7">
+
+                            <div class="logoBox"> <a href="/"><img alt="Sberbank" src="http://www.sberbank.rs/images/basic/logo.png" /></a>
+                            </div>
+
+                        </div>
+                        <div class="col-sm-3 col-md-3 hidden-xs">
+                            <ul class="bankInfo">
+                                <li>
+                                    <div><i class="demo-icon icon-phone"></i><a href="tel:19909"><span></span>19909</a>
+                                        *</div>
+                                </li>
+                                <li>
+                                    <div><i class="demo-icon icon-pin"></i><a
+                                            href="/o_nama/ekspoziture_i_bankomati.919.html">Ekspoziture i bankomati</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-2 col-md-4 hidden-xs">
+                            <div class="comSeahBox">
+                                <div class="searchBox">
+                                    <form class="search" method="GET" action="/o-nama.929.html">
+                                        <input type="text" onblur="if(this.value=='')this.value=this.defaultValue;"
+                                            onfocus="if(this.value==this.defaultValue)this.value='';"
+                                            placeholder="Pretraga..." name="search" value="" id="search">
+                                        <button name="" type="submit" id="submit"></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-md-2 hidden-xs"> <a target="_blank" class="banking"
+                                href="https://online.sberbank.rs/retail/Account/Login?ReturnUrl=%2fretail">Online
+                                banking</a> </div>
+                        <div class="col-xs-5 hidden-sm hidden-md hidden-lg text-right">
+                            <ul class="mobileMenuItems">
+                                <li><a class="searchMobile" href="#"></a></li>
+                                <li><a class="burger-menu-button mobile-menu-action" href="#"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- /container -->
+                <div class="primNavBox hidden-xs">
+                    <ul class="main-menu">
+                        <li class='dropdown hasChild'>
+                            <div class="hover"><a href='/stanovnistvo/racuni_i_paketi/jednostavno-tekuci-racun'
+                                    data-toggle="dropdown">Računi i paketi</a></div>
+                            <div class="dropdown-menu">
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-4 text-center">
+                                        <div class="inside-left">
+
+                                            <img src="http://www.sberbank.rs/upload/images/Home_slike/Stanovnistvo/hp_box_jednostavno.png"
+                                                alt="" />
+
+                                            <a href="/stanovnistvo/racuni_i_paketi/jednostavno-tekuci-racun">
+                                                <h4>Jednostavno tekući račun</h4>
+                                            </a>
+                                            <p>Jednostavno po Vašoj meri</p>
+                                            <a href="/stanovnistvo/racuni_i_paketi/jednostavno-tekuci-racun"
+                                                class="btn-orange">Više</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-9 col-sm-8">
+                                        <div class="row row-eq-height right-menu-column"></div>
+                                        <div class="row row-eq-height right-menu-column">
+                                            <div class="col-md-4 col-sm-6"><a
+                                                    href='/stanovnistvo/racuni_i_paketi/osnovni-paket'>
+                                                    <h4>Osnovni tekući račun</h4>
+                                                </a>
+                                                <p>Upravljajte lako Vašim mesečnim primanjima</p>
+                                            </div>
+                                            <div class="col-md-4 col-sm-6"><a
+                                                    href='/stanovnistvo/racuni_i_paketi/24-7-usluge'>
+                                                    <h4>24-7- usluge</h4>
+                                                </a>
+                                                <p>Podrška za nepredviđene situacije</p>
+                                            </div>
+                                            <div class="col-md-4 col-sm-6"><a
+                                                    href='/stanovnistvo/racuni_i_paketi/dozvoljeni-minus'>
+                                                    <h4>Dozvoljeno prekoračenje</h4>
+                                                </a>
+                                                <p>Uvek tu kada Vam zatreba</p>
+                                            </div>
+                                        </div>
+                                        <div class="row row-eq-height right-menu-column">
+                                            <div class="col-md-4 col-sm-6"><a
+                                                    href='/stanovnistvo/racuni_i_paketi/platni-racun-sa-osnovnim-uslugama'>
+                                                    <h4>Platni račun sa osnovnim uslugama</h4>
+                                                </a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </li>
+                        <li class='dropdown hasChild'>
+                            <div class="hover"><a href='/stanovnistvo/krediti/kes-kredit'
+                                    data-toggle="dropdown">Krediti</a></div>
+                            <div class="dropdown-menu">
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-4 text-center">
+                                        <div class="inside-left">
+
+                                            <img src="http://www.sberbank.rs/upload/images/super kredit/KK/sber_web_renov-370x370.jpg"
+                                                alt="" />
+
+                                            <a href="/stanovnistvo/krediti/super-kredit">
+                                                <h4>Keš krediti i krediti za refinansiranje</h4>
+                                            </a>
+                                            <p>Zato što vas slušamo
+                                                kreiramo dobre ponude!</p>
+                                            <a href="/stanovnistvo/krediti/super-kredit" class="btn-orange">Više</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-9 col-sm-8">
+                                        <div class="row row-eq-height right-menu-column">
+                                            <div class="col-md-4 col-sm-6"><a href='/stanovnistvo/krediti/kes-kredit'>
+                                                    <h4>Keš kredit</h4>
+                                                </a>
+                                                <p>Obezbedite keš onda kada Vam je to najpotrebnije, po povoljnim
+                                                    uslovima!</p>
+                                            </div>
+                                            <div class="col-md-4 col-sm-6"><a
+                                                    href='/stanovnistvo/krediti/krediti-za-refinansiranje'>
+                                                    <h4>Krediti za refinansiranje</h4>
+                                                </a>
+                                                <p>Sve svoje rate spojite u jednu, značajno nižu!</p>
+                                            </div>
+                                            <div class="col-md-4 col-sm-6"><a
+                                                    href='/stanovnistvo/krediti/bonus-krediti'>
+                                                    <h4>Bonus krediti</h4>
+                                                </a>
+                                                <p>Vraća deo novca</p>
+                                            </div>
+                                        </div>
+                                        <div class="row row-eq-height right-menu-column">
+                                            <div class="col-md-4 col-sm-6"><a href='/stanovnistvo/krediti/auto-krediti'>
+                                                    <h4>Auto kredit</h4>
+                                                </a>
+                                                <p>Mogućnost kupovine novih i polovnih vozila</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class='dropdown hasChild'>
+                            <div class="hover"><a href='/stanovnistvo/stednja/devizna-stepenasta-stednja'
+                                    data-toggle="dropdown">Štednja</a></div>
+                            <div class="dropdown-menu">
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-4 text-center">
+                                        <div class="inside-left">
+
+                                            <img src="http://www.sberbank.rs/upload/images/stednja/MalaNaslovna.png" alt="" />
+
+                                            <a href="/stanovnistvo/stednja/super-stednja">
+                                                <h4>Super štednja</h4>
+                                            </a>
+                                            <p>Štedi gde evro više vredi</p>
+                                            <a href="/stanovnistvo/stednja/super-stednja" class="btn-orange">Više</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-9 col-sm-8">
+                                        <div class="row row-eq-height right-menu-column">
+                                            <div class="col-md-4 col-sm-6"><a
+                                                    href='/stanovnistvo/stednja/devizna-stepenasta-stednja'>
+                                                    <h4>Devizna stepenasta štednja</h4>
+                                                </a>
+                                                <p>Povećanje kamatne stope nakon svakog perioda oročenja</p>
+                                            </div>
+                                            <div class="col-md-4 col-sm-6"><a
+                                                    href='/stanovnistvo/stednja/dinarska-stepenasta-stednja'>
+                                                    <h4>Dinarska stepenasta štednja</h4>
+                                                </a>
+                                                <p>Povećanje kamatne stope nakon svakog perioda oročenja</p>
+                                            </div>
+                                            <div class="col-md-4 col-sm-6"><a
+                                                    href='/stanovnistvo/stednja/orocena-stednja-1'>
+                                                    <h4>Oročena štednja</h4>
+                                                </a>
+                                                <p>Sigurno mesto za štednju koja raste.</p>
+                                            </div>
+                                        </div>
+                                        <div class="row row-eq-height right-menu-column">
+                                            <div class="col-md-4 col-sm-6"><a
+                                                    href='/stanovnistvo/stednja/dobro-jutro-stednja-6'>
+                                                    <h4>Dobro jutro štednja</h4>
+                                                </a>
+                                                <p>Jednostavno je štedeti ONLINE</p>
+                                            </div>
+                                            <div class="col-md-4 col-sm-6"><a
+                                                    href='/stanovnistvo/stednja/stednja_30_50'>
+                                                    <h4>Štednja 30+ 50+</h4>
+                                                </a>
+                                                <p>Fleksibilnost i dostupnost novca u svakom trenutku</p>
+                                            </div>
+                                            <div class="col-md-4 col-sm-6"><a
+                                                    href='/stanovnistvo/stednja/super-stednja'>
+                                                    <h4>Super štednja</h4>
+                                                </a>
+                                                <p>Štedi gde evro više vredi</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class='dropdown hasChild'>
+                            <div class="hover"><a href='/stanovnistvo/platne_kartice/sa-nama-na-putu-kartica'
+                                    data-toggle="dropdown">Platne kartice</a></div>
+                            <div class="dropdown-menu">
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-4 text-center">
+                                        <div class="inside-left">
+
+                                            <img src="http://www.sberbank.rs/upload/images/Home_slike/Stanovnistvo/hp-box-product-strana-super-platna-kartica.png"
+                                                alt="" />
+
+                                            <a href="/stanovnistvo/platne_kartice/platna-super-kartica">
+                                                <h4>Platna Super Kartica</h4>
+                                            </a>
+                                            <p>Plaćajte na rate i uštedite kupujući uz brojne pogodnosti</p>
+                                            <a href="/stanovnistvo/platne_kartice/platna-super-kartica"
+                                                class="btn-orange">Više</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-9 col-sm-8">
+                                        <div class="row row-eq-height right-menu-column">
+                                            <div class="col-md-4 col-sm-6"><a
+                                                    href='/stanovnistvo/platne_kartice/mastercard-standard'>
+                                                    <h4>Mastercard Standard</h4>
+                                                </a>
+                                                <p>Plaćajte na rate bez kamate širom zemlje</p>
+                                            </div>
+                                            <div class="col-md-4 col-sm-6"><a
+                                                    href='/stanovnistvo/platne_kartice/mastercard-debit-kartica'>
+                                                    <h4>Mastercard Debit</h4>
+                                                </a>
+                                                <p>Osećajte se kao kod kuće na svakom mestu!</p>
+                                            </div>
+                                            <div class="col-md-4 col-sm-6"><a
+                                                    href='/stanovnistvo/platne_kartice/mastercard-gold'>
+                                                    <h4>Mastercard Gold</h4>
+                                                </a>
+                                                <p>Premium pogodnosti i besplatan ulaz u Business Lounge aerodroma
+                                                    Nikola Tesla</p>
+                                            </div>
+                                        </div>
+                                        <div class="row row-eq-height right-menu-column">
+                                            <div class="col-md-4 col-sm-6"><a
+                                                    href='/stanovnistvo/platne_kartice/super-kartica'>
+                                                    <h4>Super Kartica</h4>
+                                                </a>
+                                                <p>Program nagrađivanja za kupovinu i korišćenje usluga više partnerskih
+                                                    kompanija</p>
+                                            </div>
+                                            <div class="col-md-4 col-sm-6"><a
+                                                    href='/stanovnistvo/platne_kartice/korisni-saveti-1'>
+                                                    <h4>Korisni saveti</h4>
+                                                </a>
+                                                <p>Korisni saveti kako da koriste Vaše kreditne kartice.</p>
+                                            </div>
+                                            <div class="col-md-4 col-sm-6"><a
+                                                    href='/stanovnistvo/platne_kartice/sa-nama-na-putu-kartica'>
+                                                    <h4>Sa nama na putu</h4>
+                                                </a>
+                                                <p>Sve bolja i bolja!</p>
+                                            </div>
+                                        </div>
+                                        <div class="row row-eq-height right-menu-column">
+                                            <div class="col-md-4 col-sm-6"><a
+                                                    href='/stanovnistvo/platne_kartice/dinacard-debit-kartica'>
+                                                    <h4>DinaCard Debit</h4>
+                                                </a>
+                                                <p>Osećajte se kao kod kuće na svakom mestu!</p>
+                                            </div>
+                                            <div class="col-md-4 col-sm-6"><a
+                                                    href='/stanovnistvo/platne_kartice/super-kartica-plus'>
+                                                    <h4>Super Kartica Plus</h4>
+                                                </a>
+                                                <p>Od sada Vaša Super kartica lojalnosti može biti još bolja!</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6"><a
+                                                href='/stanovnistvo/platne_kartice/specijalne-ponude'>
+                                                <h4>Specijalne ponude</h4>
+                                            </a>
+                                            <p>Sve akcije na jednom mestu!</p>
+                                        </div>
+                                    </div>
+                                    <div class="row row-eq-height right-menu-column">
+                                        <div class="col-md-4 col-sm-6"><a
+                                                href='/stanovnistvo/platne_kartice/knjizica-pogodnosti'>
+                                                <h4>Super ponuda za Superkartičare</h4>
+                                            </a></div>
+                                        <div class="col-md-4 col-sm-6"><a
+                                                href='/stanovnistvo/platne_kartice/uputstvo-za-placanje-mastercard-kreditnom-karticom-na-internetu'>
+                                                <h4>Uputstvo za plaćanje Mastercard platnim karticama na internetu</h4>
+                                            </a>
+                                            <p>Bezbedno, brzo i jednostavno plaćanje na internetu</p>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6"><a href='https://www.sberbank.rs/loungekey'
+                                                target='_blank'>
+                                                <h4>LoungeKey</h4>
+                                            </a>
+                                            <p>Doživite premium iskustvo i putujte sa stilom!</p>
+                                        </div>
+                                    </div>
+                                    <div class="row row-eq-height right-menu-column">
+                                        <div class="col-md-4 col-sm-6"><a href='https://www.sberbank.rs/boingo-wifi'
+                                                target='_blank'>
+                                                <h4>Boingo Wi-Fi</h4>
+                                            </a>
+                                            <p>Budite online svuda u svetu!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class='dropdown hasChild'>
+                            <div class="hover"><a href='/stanovnistvo/ostale_usluge/osiguranje-1'
+                                    data-toggle="dropdown">Ostale usluge</a></div>
+                            <div class="dropdown-menu">
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-4 text-center">
+                                        <div class="inside-left">
+
+                                            <img src="http://www.sberbank.rs/upload/images/Home_slike/Stanovnistvo/hp-box-osiguranje.png"
+                                                alt="" />
+
+                                            <a href="/stanovnistvo/ostale_usluge/osiguranje-1">
+                                                <h4>Osiguranje</h4>
+                                            </a>
+                                            <p>Osiguranje uz tekući račun, kredit ili kreditnu karticu</p>
+                                            <a href="/stanovnistvo/ostale_usluge/osiguranje-1"
+                                                class="btn-orange">Više</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-9 col-sm-8">
+                                        <div class="row row-eq-height right-menu-column"></div>
+                                        <div class="row row-eq-height right-menu-column">
+                                            <div class="col-md-4 col-sm-6"><a
+                                                    href='/stanovnistvo/ostale_usluge/placanje-2d-bar-kodom'>
+                                                    <h4>Plaćanje računa skeniranjem bar koda</h4>
+                                                </a>
+                                                <p>Plaćanje komunalnih i drugih režijskih računa na kasama Mercator S
+                                                    d.o.o.</p>
+                                            </div>
+                                            <div class="col-md-4 col-sm-6"><a
+                                                    href='/stanovnistvo/ostale_usluge/placanje-prema-inostranstvu'>
+                                                    <h4>Plaćanje prema inostranstvu</h4>
+                                                </a>
+                                                <p>Nema granica za promet van granica</p>
+                                            </div>
+                                            <div class="col-md-4 col-sm-6"><a
+                                                    href='/stanovnistvo/ostale_usluge/usluge-sektora-trzista-6'>
+                                                    <h4>Usluge sektora tržišta</h4>
+                                                </a>
+                                                <p>Za optimalno ostvarivanje Vaših ciljeva</p>
+                                            </div>
+                                        </div>
+                                        <div class="row row-eq-height right-menu-column">
+                                            <div class="col-md-4 col-sm-6"><a
+                                                    href='/stanovnistvo/ostale_usluge/transfer-novca-6'>
+                                                    <h4>MoneyGram</h4>
+                                                </a>
+                                                <p>Jednostavan i pouzdan prenos novca</p>
+                                            </div>
+                                            <div class="col-md-4 col-sm-6"><a
+                                                    href='/stanovnistvo/ostale_usluge/transfer-novca'>
+                                                    <h4>WesternUnion </h4>
+                                                </a>
+                                                <p>Brz i siguran transfer novca</p>
+                                            </div>
+                                            <div class="col-md-4 col-sm-6"><a
+                                                    href='/stanovnistvo/ostale_usluge/banka-na-poslu'>
+                                                    <h4>Banka na poslu</h4>
+                                                </a>
+                                                <p>Konačno ne morate da dolazite u banku!</p>
+                                            </div>
+                                        </div>
+                                        <div class="row row-eq-height right-menu-column">
+                                            <div class="col-md-4 col-sm-6"><a
+                                                    href='/stanovnistvo/ostale_usluge/prodaja-stanova-i-nepokretnosti'>
+                                                    <h4>Prodaja stanova i nepokretnosti</h4>
+                                                </a>
+                                                <p>Do nepokretnosti preko banke!</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6"><a
+                                                href='/stanovnistvo/ostale_usluge/instant-placanja'>
+                                                <h4>Instant plaćanja</h4>
+                                            </a>
+                                            <p> Prenos novca u realnom vremenu</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class='dropdown hasChild'>
+                            <div class="hover"><a href='/stanovnistvo/digitalna_banka/sber-x-change'
+                                    data-toggle="dropdown">Digitalna banka</a></div>
+                            <div class="dropdown-menu">
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-4 text-center">
+                                        <div class="inside-left">
+
+                                            <img src="http://www.sberbank.rs/upload/images/IPS tutorial 2px-01.png" alt="" />
+
+                                            <a
+                                                href="/stanovnistvo/digitalna_banka/instant-placanje-skeniranjem-qr-koda">
+                                                <h4>IPS - instant plaćanje skeniranjem QR koda</h4>
+                                            </a>
+                                            <p>Sve što vam je potrebno je - mobilni telefon</p>
+                                            <a href="/stanovnistvo/digitalna_banka/instant-placanje-skeniranjem-qr-koda"
+                                                class="btn-orange">Više</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-9 col-sm-8">
+                                        <div class="row row-eq-height right-menu-column">
+                                            <div class="col-md-4 col-sm-6"><a
+                                                    href='/stanovnistvo/digitalna_banka/sber-x-change'>
+                                                    <h4>Sber X:Change</h4>
+                                                </a>
+                                                <p>Kupoprodaja valuta u realnom vremenu</p>
+                                            </div>
+                                            <div class="col-md-4 col-sm-6"><a
+                                                    href='/stanovnistvo/digitalna_banka/mobilna-aplikacija'>
+                                                    <h4>Sberbank Online - Smart mbanking aplikacija </h4>
+                                                </a>
+                                                <p>Uštedite vreme i novac - Mobilno bankarstvo!</p>
+                                            </div>
+                                            <div class="col-md-4 col-sm-6"><a
+                                                    href='/stanovnistvo/digitalna_banka/e-banking'>
+                                                    <h4>Sberbank Online - Smart elektronsko bankarstvo </h4>
+                                                </a>
+                                                <p>Jednostavno, brzo i sigurno - Elektronsko bankarstvo!</p>
+                                            </div>
+                                        </div>
+                                        <div class="row row-eq-height right-menu-column">
+                                            <div class="col-md-4 col-sm-6"><a
+                                                    href='/stanovnistvo/digitalna_banka/placanje-racima-skeniranjem-qr-koda'>
+                                                    <h4>Plaćanje računa skeniranjem QR koda</h4>
+                                                </a>
+                                                <p>Plaćanje računa skeniranjem QR koda</p>
+                                            </div>
+                                            <div class="col-md-4 col-sm-6"><a
+                                                    href='/stanovnistvo/digitalna_banka/sberbank-bankomati'>
+                                                    <h4>Sberbank Smart bankomati </h4>
+                                                </a>
+                                                <p>Upoznajte se sa svim servisima dostupnim na našim bankomatima.</p>
+                                            </div>
+                                            <div class="col-md-4 col-sm-6"><a
+                                                    href='/stanovnistvo/digitalna_banka/sberbank-online-uputstva'>
+                                                    <h4>Sberbank Online – Uputstva</h4>
+                                                </a>
+                                                <p>Jednostavno korišćenje Sberbank Online usluga</p>
+                                            </div>
+                                        </div>
+                                        <div class="row row-eq-height right-menu-column">
+                                            <div class="col-md-4 col-sm-6"><a
+                                                    href='/stanovnistvo/digitalna_banka/instant-placanje-skeniranjem-qr-koda'>
+                                                    <h4>IPS - instant plaćanje skeniranjem QR koda</h4>
+                                                </a>
+                                                <p>Sve što vam je potrebno je - mobilni telefon</p>
+                                            </div>
+                                            <div class="col-md-4 col-sm-6"><a
+                                                    href='/stanovnistvo/digitalna_banka/smart-kes-kredit'>
+                                                    <h4>Smart Keš Kredit</h4>
+                                                </a>
+                                                <p>Keš na Vašem računu za samo 5 minuta</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- /subNavHolder -->
+            </div>
+            <!-- /headerBox -->
+        </header>
+        <!-- /header -->
+        <div class="hidden-lg hidden-md hidden-sm mainButtons">
+            <a class="button login" href="https://online.sberbank.rs/retail/Account/Login?ReturnUrl=%2fretail"><i
+                    class="demo-icon icon-lock"></i> Online banking</a>
+            <a class="button phonenum" href="tel:19909"><i class="demo-icon icon-phone"></i> 19909</a>
+            <a class="button branch" href="/o_nama/ekspoziture_i_bankomati.919.html"> <i class="demo-icon icon-pin"></i>
+                Ekspoziture i bankomati</a>
+        </div>
+
+
+        <a id="3263"></a>
+        <div class="contentWrap">
+            <section class="homeSlider">
+                <div class="slickSlider">
+
+                    <a href="https://www.sberbank.rs/mali-biznis/mala-preduzeca/vredne-vredi-podrzati">
+
+                        <div class="photo">
+
+                            <img src="http://www.sberbank.rs/upload/images/Header_slike/VVP-1920x625px-no-logo-1.jpg" />
+
+                            <div class="sliderText" style="display: block; visibility: visible;">
+                                <div class="ttable">
+                                    <div class="cell">
+                                        <h1>Vredne vredi podržati </h1>
+                                        <h4>
+                                            <p> Zato što vas slušamo, godinama uspešno sarađujemo</p>
+                                        </h4>
+                                        <span class="btn-orange">Saznaj više!</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </a>
+
+                    <a href="https://www.sberbank.rs/stanovnistvo/digitalna_banka/instant-placanje-skeniranjem-qr-koda">
+
+                        <div class="photo">
+
+                            <img src="http://www.sberbank.rs/upload/images/Stanovnistvo/IPS-1000x370px-2.jpg" />
+
+                            <div class="sliderText" style="display: block; visibility: visible;">
+                                <div class="ttable">
+                                    <div class="cell">
+                                        <h1>IPS - Instant plaćanje skeniranjem QR koda </h1>
+                                        <h4> </h4>
+                                        <span class="btn-orange">Saznaj više</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </a>
+
+                    <a href="https://www.sberbank.rs/stanovnistvo/moratorijum">
+
+                        <div class="photo">
+
+                            <img src="http://www.sberbank.rs/upload/images/sberbank_moratorijum1000x3703.jpg" />
+
+                            <div class="sliderText" style="display: block; visibility: visible;">
+                                <div class="ttable">
+                                    <div class="cell">
+                                        <h1>Obaveštenje o ponudi zastoja u otplati obaveza </h1>
+                                        <h4>
+                                            <p> (obaveštenje o moratorijumu)</p>
+                                        </h4>
+                                        <span class="btn-orange">Saznaj više</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </a>
+
+                </div>
+            </section>
+        </div>
+        <a id="3274"></a>
+        <div class="main homePage">
+            <div class="smallPromo">
+                <a id="10740"></a>
+                <div class="row row-eq-height">
+                    <a id="3280"></a>
+                    <div class="col-sm-3 promo">
+
+                        <p class="upTitle">Izdvojeno za Vas</p>
+
+                        <a href="https://www.sberbank.rs/privreda/privreda/krediti/investicioni-revolving-krediti-4">
+
+                            <img src="http://www.sberbank.rs/upload/images/sber_gs_370x370px.jpg" />
+
+                        </a>
+
+                        <h4 class="title">
+
+                            <a
+                                href="https://www.sberbank.rs/privreda/privreda/krediti/investicioni-revolving-krediti-4">
+                                Garantna šema
+
+                            </a>
+
+                        </h4>
+
+                        <p class="lead">
+                            <p>Podrška privredi</p>
+                        </p>
+
+                        <a href="https://www.sberbank.rs/privreda/privreda/krediti/investicioni-revolving-krediti-4"
+                            class="more">Detaljnije</a>
+
+
+                    </div>
+                    <a id="8946"></a>
+                    <div class="col-sm-3 promo">
+
+                        <p class="upTitle">Izdvojeno za Vas</p>
+
+                        <a href="https://www.sberbank.rs/stanovnistvo/moratorijum">
+
+                            <img src="http://www.sberbank.rs/upload/images/stednja/Moratorijum300x300.png" />
+
+                        </a>
+
+                        <h4 class="title">
+
+                            <a href="https://www.sberbank.rs/stanovnistvo/moratorijum">
+                                Obaveštenje o moratorijumu
+
+                            </a>
+
+                        </h4>
+
+                        <a href="https://www.sberbank.rs/stanovnistvo/moratorijum" class="more">Detaljnije</a>
+
+
+                    </div>
+                    <a id="10739"></a>
+                    <div class="col-sm-3 promo">
+
+                        <p class="upTitle">Izdvojeno za Vas</p>
+
+                        <a href="https://www.sberbank.rs/mali-biznis/mala-preduzeca/vredne-vredi-podrzati">
+
+                            <img src="http://www.sberbank.rs/upload/images/MaliBiznis/MalaPreduzeca/VVP-300x300px.jpg" />
+
+                        </a>
+
+                        <h4 class="title">
+
+                            <a href="https://www.sberbank.rs/mali-biznis/mala-preduzeca/vredne-vredi-podrzati">
+                                Vredne vredi podržati
+
+                            </a>
+
+                        </h4>
+
+                        <p class="lead">
+                            <p>Zato što vas slušamo, godinama uspešno sarađujemo</p>
+                        </p>
+
+                        <a href="https://www.sberbank.rs/mali-biznis/mala-preduzeca/vredne-vredi-podrzati"
+                            class="more">Detaljnije</a>
+
+
+                    </div>
+                    <a id="3281"></a>
+                    <div class="col-sm-3 promo">
+
+                        <p class="upTitle">Kursna lista</p>
+
+
+                        <div class="exchangeRate">
+                            <table>
+                                <tr>
+                                    <td colspan="3">06.10.2020.</td>
+                                </tr>
+                                <tr>
+                                    <td>Valuta</td>
+                                    <td>Kupovni</td>
+                                    <td>Prodajni</td>
+                                </tr>
+
+                                <tr>
+                                    <td><img src="http://www.sberbank.rs/images/basic/eu-flag.jpg" alt="" /> EUR</td>
+                                    <td>115.2164</td>
+                                    <td>119.9192</td>
+                                </tr>
+
+
+                                <tr>
+                                    <td><img src="http://www.sberbank.rs/images/basic/ch-flag.jpg" alt="" /> CHF</td>
+                                    <td>105.7206</td>
+                                    <td>112.26</td>
+                                </tr>
+
+
+                                <tr>
+                                    <td><img src="http://www.sberbank.rs/images/basic/british-flag.jpg" alt="" /> GBP</td>
+                                    <td>125.6094</td>
+                                    <td>133.379</td>
+                                </tr>
+
+
+                                <tr>
+                                    <td><img src="http://www.sberbank.rs/images/basic/russian-flag.jpg" alt="" /> RUB</td>
+                                    <td>1.1471</td>
+                                    <td>1.4021</td>
+                                </tr>
+
+
+                                <tr>
+                                    <td><img src="http://www.sberbank.rs/images/basic/us-flag.jpg" alt="" /> USD</td>
+                                    <td>96.7185</td>
+                                    <td>102.7011</td>
+                                </tr>
+
+                            </table>
+                        </div>
+
+
+
+                        <a href="/kursne-i-referentne-liste">
+
+                        </a>
+
+                        <h4 class="title">
+
+                            <a href="/kursne-i-referentne-liste">
+
+
+                            </a>
+
+                        </h4>
+
+                        <a href="/kursne-i-referentne-liste" class="more">Detaljnije</a>
+
+
+                    </div>
+                    <a id="3277"></a>
+                </div>
+                <a id="3275"></a>
+            </div>
+        </div>
+        <a id="5031"></a>
+        <div class="main homePage">
+            <div class="smallPromo">
+                <div class="home-news">
+                    <div class="news-border">
+                        <div class="row">
+                            <a id="5035"></a>
+                            <div class="col-sm-3 text-center">
+
+                                <a href="https://www.sberbank.rs/stanovnistvo/stednja/super-stednja">
+
+                                    <img src="http://www.sberbank.rs/upload/images/Stednja.png" />
+
+                                    <h5>Super štednja</h5>
+
+                                </a>
+
+                            </div>
+                            <a id="5034"></a>
+                            <div class="col-sm-3 text-center">
+
+                                <a href="https://www.sberbank.rs/stanovnistvo/digitalna_banka/e-banking">
+
+                                    <img src="http://www.sberbank.rs/upload/images/Stanovnistvo/Naslovna/sberbank_smartDigitalBanking554x370.jpg" />
+
+                                    <h5>Smart elektronsko bankarstvo</h5>
+
+                                </a>
+
+                            </div>
+                            <a id="13417"></a>
+                            <div class="col-sm-3 text-center">
+
+                                <a href="/o_nama/kontakt">
+
+                                    <img src="http://www.sberbank.rs/images/tmp/hp-box-kontakt-centar.png" />
+
+                                    <h5>Kontakt centar</h5>
+
+                                </a>
+
+                            </div>
+                            <a id="5032"></a>
+                            <div class="col-sm-3 text-center">
+
+                                <a href="https://bit.ly/2Q001EH">
+
+                                    <img src="http://www.sberbank.rs/upload/images/Vazno obavestenje_554x370pxA.jpg" />
+
+                                    <h5>Phishing kampanja sa imenom Sberbank</h5>
+
+                                </a>
+
+                            </div>
+                            <a id="5030"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a id="3265"></a>
+        <div class="main homePage">
+            <div class="homePage tools">
+                <a id="3267"></a>
+                <div class="row">
+                    <a id="3272"></a>
+
+
+                    <div class="col-sm-3">
+                        <div class="toolButton">
+                            <a href="/o-nama/vazne-informacije"><span><i class="fa fa-user"></i> Važne
+                                    informacije</span></a>
+                        </div>
+                    </div>
+                    <a id="3271"></a>
+
+
+                    <div class="col-sm-3">
+                        <div class="toolButton">
+                            <a href="/vase_misljenje_je_vazno/vase_misljenje_je_vazno.893.html"><span><i
+                                        class="fa fa-comments"></i> Prigovori i pitanja</span></a>
+                        </div>
+                    </div>
+                    <a id="3270"></a>
+
+
+                    <div class="col-sm-3">
+                        <div class="toolButton">
+                            <a href="/tarifnici"><span><i class="fa fa-calculator"></i> Tarifnici</span></a>
+                        </div>
+                    </div>
+                    <a id="3273"></a>
+
+
+                    <div class="col-sm-3">
+                        <div class="toolButton">
+                            <a
+                                href="/finansijski_izvestaji_i_opsti_uslovi_poslovanja/finansijski_izvestaji_i_opsti_uslovi_poslovanja.992.html"><span><i
+                                        class="fa fa-check"></i> Opšti uslovi poslovanja</span></a>
+                        </div>
+                    </div>
+                    <a id="3268"></a>
+                </div>
+                <a id="3266"></a>
+            </div>
+        </div>
+
+
+        <footer>
+            <div class="footerGreen">
+                <div class="row ">
+                    <div class="col-md-3 hidden-sm hidden-xs">
+                        <p>Potrebna vam je pomoć?</p>
+                    </div>
+                    <div class="col-md-9">
+                        <ul class="footerMenuGreen">
+                            <li><i class="icon-mouse"></i> <a href="/o_nama.927.html">Kontaktirajte nas</a></li>
+                            <li><i class="icon-phone"></i> <a href="tel:19909">19909 *</a> </li>
+                            <li><i class="icon-pin"></i> <a href="/o_nama/ekspoziture_i_bankomati.919.html">Ekspoziture
+                                    i bankomati</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footerContent">
+                <div class="footerBottom">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="upTtile">
+                                <h4>Svi proizvodi i usluge</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="links" id="footerlinks">
+                        <div class="row linksContent">
+                            <div class="col-sm-2">
+                                <p>Računi i paketi</p>
+                                <ul>
+                                    <li><a href='/stanovnistvo/racuni_i_paketi/jednostavno-tekuci-racun'>Jednostavno
+                                            tekući račun</a>
+                                    <li>
+                                    <li><a href='/stanovnistvo/racuni_i_paketi/osnovni-paket'>Osnovni tekući račun</a>
+                                    <li>
+                                    <li><a href='/stanovnistvo/racuni_i_paketi/24-7-usluge'>24-7- usluge</a>
+                                    <li>
+                                    <li><a href='/stanovnistvo/racuni_i_paketi/dozvoljeni-minus'>Dozvoljeno
+                                            prekoračenje</a>
+                                    <li>
+                                    <li><a href='/stanovnistvo/racuni_i_paketi/platni-racun-sa-osnovnim-uslugama'>Platni
+                                            račun sa osnovnim uslugama</a>
+                                    <li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-2">
+                                <p>Krediti</p>
+                                <ul>
+                                    <li><a href='/stanovnistvo/krediti/kes-kredit'>Keš kredit</a>
+                                    <li>
+                                    <li><a href='/stanovnistvo/krediti/krediti-za-refinansiranje'>Krediti za
+                                            refinansiranje</a>
+                                    <li>
+                                    <li><a href='/stanovnistvo/krediti/bonus-krediti'>Bonus krediti</a>
+                                    <li>
+                                    <li><a href='/stanovnistvo/krediti/auto-krediti'>Auto kredit</a>
+                                    <li>
+                                    <li><a href='/stanovnistvo/krediti/super-kredit'>Keš krediti i krediti za
+                                            refinansiranje</a>
+                                    <li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-2">
+                                <p>Štednja</p>
+                                <ul>
+                                    <li><a href='/stanovnistvo/stednja/devizna-stepenasta-stednja'>Devizna stepenasta
+                                            štednja</a>
+                                    <li>
+                                    <li><a href='/stanovnistvo/stednja/dinarska-stepenasta-stednja'>Dinarska stepenasta
+                                            štednja</a>
+                                    <li>
+                                    <li><a href='/stanovnistvo/stednja/orocena-stednja-1'>Oročena štednja</a>
+                                    <li>
+                                    <li><a href='/stanovnistvo/stednja/dobro-jutro-stednja-6'>Dobro jutro štednja</a>
+                                    <li>
+                                    <li><a href='/stanovnistvo/stednja/stednja_30_50'>Štednja 30+ 50+</a>
+                                    <li>
+                                    <li><a href='/stanovnistvo/stednja/super-stednja'>Super štednja</a>
+                                    <li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-2">
+                                <p>Platne kartice</p>
+                                <ul>
+                                    <li><a href='/stanovnistvo/platne_kartice/mastercard-standard'>Mastercard
+                                            Standard</a>
+                                    <li>
+                                    <li><a href='/stanovnistvo/platne_kartice/mastercard-debit-kartica'>Mastercard
+                                            Debit</a>
+                                    <li>
+                                    <li><a href='/stanovnistvo/platne_kartice/mastercard-gold'>Mastercard Gold</a>
+                                    <li>
+                                    <li><a href='/stanovnistvo/platne_kartice/super-kartica'>Super Kartica</a>
+                                    <li>
+                                    <li><a href='/stanovnistvo/platne_kartice/korisni-saveti-1'>Korisni saveti</a>
+                                    <li>
+                                    <li><a href='/stanovnistvo/platne_kartice/sa-nama-na-putu-kartica'>Sa nama na
+                                            putu</a>
+                                    <li>
+                                    <li><a href='/stanovnistvo/platne_kartice/dinacard-debit-kartica'>DinaCard Debit</a>
+                                    <li>
+                                    <li><a href='/stanovnistvo/platne_kartice/super-kartica-plus'>Super Kartica Plus</a>
+                                    <li>
+                                    <li><a href='/stanovnistvo/platne_kartice/platna-super-kartica'>Platna Super
+                                            Kartica</a>
+                                    <li>
+                                    <li><a href='/stanovnistvo/platne_kartice/specijalne-ponude'>Specijalne ponude</a>
+                                    <li>
+                                    <li><a href='/stanovnistvo/platne_kartice/knjizica-pogodnosti'>Super ponuda za
+                                            Superkartičare</a>
+                                    <li>
+                                    <li><a
+                                            href='/stanovnistvo/platne_kartice/uputstvo-za-placanje-mastercard-kreditnom-karticom-na-internetu'>Uputstvo
+                                            za plaćanje Mastercard platnim karticama na internetu</a>
+                                    <li>
+                                    <li><a href='https://www.sberbank.rs/loungekey' target='_blank'>LoungeKey</a>
+                                    <li>
+                                    <li><a href='https://www.sberbank.rs/boingo-wifi' target='_blank'>Boingo Wi-Fi</a>
+                                    <li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-2">
+                                <p>Ostale usluge</p>
+                                <ul>
+                                    <li><a href='/stanovnistvo/ostale_usluge/osiguranje-1'>Osiguranje</a>
+                                    <li>
+                                    <li><a href='/stanovnistvo/ostale_usluge/placanje-2d-bar-kodom'>Plaćanje računa
+                                            skeniranjem bar koda</a>
+                                    <li>
+                                    <li><a href='/stanovnistvo/ostale_usluge/placanje-prema-inostranstvu'>Plaćanje prema
+                                            inostranstvu</a>
+                                    <li>
+                                    <li><a href='/stanovnistvo/ostale_usluge/usluge-sektora-trzista-6'>Usluge sektora
+                                            tržišta</a>
+                                    <li>
+                                    <li><a href='/stanovnistvo/ostale_usluge/transfer-novca-6'>MoneyGram</a>
+                                    <li>
+                                    <li><a href='/stanovnistvo/ostale_usluge/transfer-novca'>WesternUnion </a>
+                                    <li>
+                                    <li><a href='/stanovnistvo/ostale_usluge/banka-na-poslu'>Banka na poslu</a>
+                                    <li>
+                                    <li><a href='/stanovnistvo/ostale_usluge/prodaja-stanova-i-nepokretnosti'>Prodaja
+                                            stanova i nepokretnosti</a>
+                                    <li>
+                                    <li><a href='/stanovnistvo/ostale_usluge/nabavke'>Nabavke</a>
+                                    <li>
+                                    <li><a href='/stanovnistvo/ostale_usluge/instant-placanja'>Instant plaćanja</a>
+                                    <li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-2">
+                                <p>Digitalna banka</p>
+                                <ul>
+                                    <li><a href='/stanovnistvo/digitalna_banka/sber-x-change'>Sber X:Change</a>
+                                    <li>
+                                    <li><a href='/stanovnistvo/digitalna_banka/mobilna-aplikacija'>Sberbank Online -
+                                            Smart mbanking aplikacija </a>
+                                    <li>
+                                    <li><a href='/stanovnistvo/digitalna_banka/e-banking'>Sberbank Online - Smart
+                                            elektronsko bankarstvo </a>
+                                    <li>
+                                    <li><a href='/stanovnistvo/digitalna_banka/placanje-racima-skeniranjem-qr-koda'>Plaćanje
+                                            računa skeniranjem QR koda</a>
+                                    <li>
+                                    <li><a href='/stanovnistvo/digitalna_banka/sberbank-bankomati'>Sberbank Smart
+                                            bankomati </a>
+                                    <li>
+                                    <li><a href='/stanovnistvo/digitalna_banka/sberbank-online-uputstva'>Sberbank Online
+                                            – Uputstva</a>
+                                    <li>
+                                    <li><a href='/stanovnistvo/digitalna_banka/instant-placanje-skeniranjem-qr-koda'>IPS
+                                            - instant plaćanje skeniranjem QR koda</a>
+                                    <li>
+                                    <li><a href='/stanovnistvo/digitalna_banka/smart-kes-kredit'>Smart Keš Kredit</a>
+                                    <li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row linksContent">
+                            <div class="col-sm-2">
+                                <p><a href="/tarifnici">Tarifnici</a></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottomLinks">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <ul>
+
+                                    <li><a href="/o-nama">O nama</a>
+
+
+
+                                    </li>
+
+                                    <li><a
+                                            href="liste-reprezentativnih-usluga-i-pregledi-usluga-i-naknada-i-informacija-za-prenos-racuna">Liste
+                                            reprezentativnih usluga, pregledi usluga i naknada i informacija za prenos
+                                            računa</a>
+
+
+
+                                    </li>
+
+                                    <li><a href="/o-nama/nabavke">Nabavka</a>
+
+
+
+                                    </li>
+
+                                    <li><a href="/karijera">Karijera</a>
+
+
+
+                                    </li>
+
+                                    <li><a href="/o-nama/kursne-i-referentne-liste">Referentne kamatne stope</a>
+
+
+
+                                    </li>
+
+                                    <li><a href="https://sberbank.epaxios.com/?SetLang=en_US ">Sberbank - EPAXIOS
+                                            Elektronska trgovinska platforma </a>
+
+
+
+                                    </li>
+
+                                    <li><a href="/o-nama/dokumenti">Dokumenti</a>
+
+
+
+                                    </li>
+
+                                    <li><a href="/email_disclaimer/uslovi-koriscenja-sajta">Uslovi korišćenja</a>
+
+
+
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="langBox">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="legalAndSocial">
+                        <div class="row">
+                            <div class="col-sm-12 legal">
+                                <p>* Poziv će se tarifirati u skladu sa cenovnikom konkretnog provajdera mobilne/ fiksne
+                                    telefonije </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="legalAndSocial">
+                        <div class="row">
+                            <div class="col-sm-9 legal">
+                                <p style="float: left; margin-right: 40px;"><a
+                                        href="/upload/disclamer/Opsta-pravila-privatnosti.pdf">Opšte obaveštenje o
+                                        obradi podataka o ličnosti</a></p>
+                                <p>Sadržaj ove stranice je isključivo informativan. Za detaljne informacije pogledajte
+                                    aktuelne <a href="/tarifnici">tarifnike</a>. </p>
+                            </div>
+                            <div class="col-sm-3 socialBox">
+                                <div class="socialHolder">
+                                    <a href="https://www.facebook.com/SberbankSrbijaad/"><span
+                                            class="fa fa-facebook"></span></a>
+                                    <a href="https://www.instagram.com/sberbank.srbija/"><span
+                                            class="fa fa-instagram"></span></a>
+                                    <a href="https://www.youtube.com/user/SberbankSrbija"><span
+                                            class="fa fa-youtube-play"></span></a>
+                                    <a href="https://www.linkedin.com/company-beta/3154794/?pathWildcard=3154794"><span
+                                            class="fa fa-linkedin"></span></a>
+                                    <!--<a href="#"><span class="fa fa-sitemap"></span></a>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
