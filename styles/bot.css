@@ -1,0 +1,44 @@
+.oda-chat-button {
+	background-position: center center;
+	background-repeat: no-repeat;
+	border: none;
+	border-radius: 50%;
+	bottom: 0;
+	box-shadow: 0 -1px 5px 0 rgba(0, 0, 0, 0.35);
+	cursor: pointer;
+	overflow: visible;
+	padding: 0;
+	position: absolute;
+	right: 0;
+	text-align: center;
+	z-index: 10000;
+	transition: height 0.25s ease-out, width 0.25s ease-out;
+}
+
+.oda-chat-widget {
+	background: #ffffff;
+	box-shadow: -4px 2px 21px 0 rgba(112, 112, 112, 0.50);
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	position: absolute;
+	text-decoration: none;
+	text-transform: none;
+	z-index: 10000;
+}
+
+.oda-chat-user-input {
+	border: 1px solid #dadada;
+	border-radius: 16px;
+	box-sizing: border-box;
+	color: #333333;
+	flex: 1;
+	height: 32px;
+	margin-left: 0px !important;
+	margin-right: 0px !important;
+	min-height: 32px;
+	max-height: 61px;
+	outline: none;
+	padding: 6px 14px;
+	resize: none;
+}

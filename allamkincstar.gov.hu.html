@@ -7,42 +7,42 @@
         <meta name="viewport" content="width=device-width">
 		<meta name="keywords" content="">
         <link rel="stylesheet" href="http://www.allamkincstar.gov.hu/css/style.css">
-        <link rel="stylesheet" href="http://www.allamkincstar.gov.hu/css/video.css">
+		<link rel="stylesheet" href="http://www.allamkincstar.gov.hu/css/video.css">
+		<link rel="stylesheet" href="styles/bot.css">
 		<script tyle="text/javascript">var _accessibility = 0; var _language = 2;</script>
-		<script>
-			/**
-			* Flag to set mechanism to connect to chat server
-			* true - Use authentication token based mechanism
-			* false - Use parameters to connect to chat server
-			*/
-			var clientAuthEnabled = false;
-		</script>
-		<script src="scripts/settings.js"></script>
 		<script>
 			var chatWidgetSettings = {
 				URI: 'oda-d11e0d7297d34f79a661a74649ecbcab-da4.data.digitalassistant.oci.oraclecloud.com',
-          		channelId: 'ef1018b5-2707-4b4b-908a-d4114ec0ad74'
+          		channelId: 'ef1018b5-2707-4b4b-908a-d4114ec0ad74',
+				isDebugMode: true,
+				enableAttachment: false,
+				colors: {
+					branding: "#deb306",
+					text:"#161513",
+					textLight:"#3a3631",
+					headerBackground:"#deb306",
+					conversationBackground:"#fff",
+					typingIndicator:"#deb306",
+					botMessageBackground:"#daf1e5",
+					userMessageBackground:"#ececec",
+					actionsBackground:"#119950",
+					actionsBackgroundFocus:"#0e7d41",
+					actionsBackgroundHover:"#0e7d41",
+					actionsBorder:"#119950",
+					actionsText:"#fff",
+            	},
+            	botButtonIcon: "images/allamkincstarBot.svg"
 			};
 	  
 			function initSdk(name) {
-				// Default name is Bots
-				if (!name) {
-					name = 'Bots';
-				}
 				setTimeout(() => {
-					let Bots;
-					if (clientAuthEnabled) {
-						Bots = new WebSDK(chatWidgetSettings, generateToken);
-					} else {
-						Bots = new WebSDK(chatWidgetSettings);
-					}
-					Bots.connect();
-	  
-					window[name] = Bots;
+					let Bot = new WebSDK(chatWidgetSettings);
+					Bot.connect();
+					window[name] = Bot;
 				});
 			}
 		</script>
-		<script src="scripts/web-sdk.js" onload="initSdk('Bots')"></script>
+		<script src="scripts/web-sdk.js" onload="initSdk('TreasuryBot')"></script>
     </head>
     <body>
 <div class="body-wrapper">
